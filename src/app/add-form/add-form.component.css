@@ -1,0 +1,25 @@
+form{
+  position: relative;
+  margin-top: 100px;
+  left:100px;
+}
+input{
+margin-bottom: 15px;
+margin-left: auto;
+width: 500px;
+height: 30px;
+}
+#description{
+  height: 100px;
+}
+.sendB{
+  position: relative;
+}
+button{
+  position: absolute;
+  background-color: peachpuff;
+  width: 200px;
+  height: 30px;
+  border: none;
+  left: 50px;
+}

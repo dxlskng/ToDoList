@@ -1,0 +1,14 @@
+<form>
+  <div class="group">
+       <input type="text"  name="titre" id="titre" placeholder="Titre Tache" [(ngModel)]="titre">
+    <br>
+    <br>
+       <input type="text" name="description" id="description" placeholder="description" [(ngModel)]="descrit">
+    <br>
+  </div>
+  <div class="sendB">
+    <br>
+    <button (click)="addTask.addlist(titre,descrit)" type="submit" routerLink="">Ajouter</button>
+
+  </div>
+</form>

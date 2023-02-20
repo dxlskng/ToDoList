@@ -1,0 +1,7 @@
+head{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Lobster', cursive;
+  font-size: large;
+  padding-top: 15px;
+}
