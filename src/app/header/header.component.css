@@ -5,3 +5,12 @@ head{
   font-size: large;
   padding-top: 15px;
 }
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  padding-left: 12px;
+  cursor: pointer;
+}
+  
