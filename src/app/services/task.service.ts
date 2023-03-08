@@ -9,11 +9,13 @@ taskList :taskcomposition[]=[
   {
     tasktitle:'Aller à l\'ecole',
     description:'faire les TD au school',
-    startDate:new Date()
+    startDate:new Date(),
+    finis:false
   },{
     tasktitle:'BOSSER ANGULAR',
     description: 'priority:50',
-    startDate:new Date()
+    startDate:new Date(),
+    finis:false
   }
 ];
   addlist(title:string ,escription:string)
@@ -22,7 +24,8 @@ taskList :taskcomposition[]=[
   this.taskList.push({
     tasktitle:title,
     description:escription,
-    startDate:new Date()
+    startDate:new Date(),
+    finis:false
   })
 }
 }
