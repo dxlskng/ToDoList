@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {taskcomposition} from "../models/taskcomposition.model";
+import { taskService } from '../services/task.service';
 
 @Component({
   selector: 'app-title-and-task-container',
@@ -7,13 +8,12 @@ import {taskcomposition} from "../models/taskcomposition.model";
   styleUrls: ['./title-and-task-container.component.css']
 })
 export class TitleAndTaskContainerComponent implements OnInit{
-  @Input() mytask!: taskcomposition;
+  @Input() mytask!: taskcomposition[];
 
+    constructor(public taskservice:taskService ){
+
+    };
   ngOnInit() {
-    // this.mytask = new taskcomposition(
-    //   'Laver Habit',
-    //   'C\'est obligé vu que tous mes habits sont sales',
-    //   new Date()
-    // )
+//     this.mytask =this.taskservice.taskList; 
 }
 }

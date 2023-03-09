@@ -10,12 +10,14 @@ taskList :taskcomposition[]=[
     tasktitle:'Aller à l\'ecole',
     description:'faire les TD au school',
     startDate:new Date(),
-    finis:false
+    finis:false,
+    id:Math.random()*100
   },{
     tasktitle:'BOSSER ANGULAR',
     description: 'priority:50',
     startDate:new Date(),
-    finis:false
+    finis:false,
+    id:Math.random()*100
   }
 ];
   addlist(title:string ,escription:string)
@@ -25,7 +27,16 @@ taskList :taskcomposition[]=[
     tasktitle:title,
     description:escription,
     startDate:new Date(),
-    finis:false
+    finis:false,
+    id:Math.random()*100
   })
+
+};
+finirTache(id:number):void{
+for (let i = 0; i < this.taskList.length; i++) {
+  if(this.taskList[i].id===id) {
+    this.taskList[i].finis=true;
+  } 
+}
 }
 }
