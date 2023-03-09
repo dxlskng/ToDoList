@@ -6,19 +6,6 @@ import {taskcomposition} from "../models/taskcomposition.model";
 })
 export class taskService{
 taskList :taskcomposition[]=[
-  {
-    tasktitle:'Aller à l\'ecole',
-    description:'faire les TD au school',
-    startDate:new Date(),
-    finis:false,
-    id:Math.random()*100
-  },{
-    tasktitle:'BOSSER ANGULAR',
-    description: 'priority:50',
-    startDate:new Date(),
-    finis:false,
-    id:Math.random()*100
-  }
 ];
   addlist(title:string ,escription:string)
 {

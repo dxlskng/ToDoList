@@ -14,6 +14,6 @@ export class TitleAndTaskContainerComponent implements OnInit{
 
     };
   ngOnInit() {
-//     this.mytask =this.taskservice.taskList; 
+this.mytask =this.taskservice.taskList; 
 }
 }

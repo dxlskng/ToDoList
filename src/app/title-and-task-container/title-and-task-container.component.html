@@ -1,11 +1,13 @@
-<div class="titleAndTaskContainer">
-  <div class="taskContainer" *ngFor="let c of mytask" >
-      <p >V</p>
-      <p id="tasktitle">Task:{{c.id}}</p><br>
+<div class="titleAndTaskContainer" *ngFor="let c of mytask" >
+  <div class="taskContainer">
+      <p (click)="c.finis" id="terminertache">V</p>
+      <p id="tasktitle">Task:{{c.tasktitle}}</p><br>
       <p>Description:{{c.description}}</p><br>
       <p>Created at:{{c.startDate | date:'shortTime'}}</p>
       <p *ngIf="c.finis===true">Statu: Termine </p>
+
   </div>
+
   <br><br><br><br><br><br>
 </div>
 <app-add-task ></app-add-task>
