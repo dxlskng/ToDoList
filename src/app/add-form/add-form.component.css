@@ -1,7 +1,7 @@
 form{
-  position: relative;
+  position:absolute ;
   margin-top: 100px;
-  left:100px;
+  left:250px;
 }
 input{
 margin-bottom: 15px;
@@ -16,7 +16,7 @@ height: 30px;
   position: relative;
 }
 button{
-  position: absolute;
+  position:relative ;
   background-color: peachpuff;
   width: 200px;
   height: 30px;
