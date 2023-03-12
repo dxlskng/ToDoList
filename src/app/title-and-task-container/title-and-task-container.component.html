@@ -1,9 +1,12 @@
 <div class="titleAndTaskContainer" *ngFor="let c of mytask" >
   <div class="taskContainer">
-      <p (click)="c.finis" id="terminertache">V</p>
-      <p id="tasktitle">Task:{{c.tasktitle}}</p><br>
+      <div class="taskTitle-and-finish-action-container">
+      <p id="tasktitle">Task:{{c.tasktitle}}</p>
+       <img (click)="taskservice.finirTache(c.id)" id="terminertache" src="../../assets/images/termine.png">
+        <br>
+      </div>
       <p>Description:{{c.description}}</p><br>
-      <p>Created at:{{c.startDate | date:'shortTime'}}</p>
+      <p>Created at:{{c.startDate | date:'shortTime'}}</p> <br>
       <p *ngIf="c.finis===true">Statu: Termine </p>
 
   </div>

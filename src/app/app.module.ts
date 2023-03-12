@@ -9,6 +9,8 @@ import { TaskListComponent } from './task-list/task-list.component';
 import {AppRoutingModule} from "./appRouting.module";
 import { AddFormComponent } from './add-form/add-form.component';
 import {FormsModule} from "@angular/forms";
+import { EndTaskComponent } from './end-task/end-task.component';
+import { LoadingTaskComponent } from './loading-task/loading-task.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {FormsModule} from "@angular/forms";
     TitleAndTaskContainerComponent,
     AddTaskComponent,
     TaskListComponent,
-    AddFormComponent
+    AddFormComponent,
+    EndTaskComponent,
+    LoadingTaskComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,3 @@
-<p>loading-task works!</p>
+<div class="end-task-form-container" *ngFor="let item of loadingTask ">
+    <h1 *ngIf="item.finis===false">Nom Tache: {{item.tasktitle}}</h1>
+</div>

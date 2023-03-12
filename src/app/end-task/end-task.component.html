@@ -1,2 +1,3 @@
-<div class="end-task-form-container">
+<div class="end-task-form-container" *ngFor="let item of endTask">
+    <h1 *ngIf="item.finis===true">Nom Tache: {{item.tasktitle}}</h1>
 </div>

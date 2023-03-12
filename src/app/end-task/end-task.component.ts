@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { interval, tap} from 'rxjs';
+import { taskcomposition } from '../models/taskcomposition.model';
 import { taskService } from '../services/task.service';
 @Component({
   selector: 'app-end-task',
@@ -7,21 +8,11 @@ import { taskService } from '../services/task.service';
   styleUrls: ['./end-task.component.css']
 })
 export class EndTaskComponent implements OnInit {
-  nomtache!:string;
-  conclusion!:string;
-  constructor(public tasklist:taskService){
+  endTask!:taskcomposition[];
+  constructor(private tasklist:taskService){
   } 
   ngOnInit(): void {
-    this.nomtache="Moussa"
-interval(1000).pipe(
-  tap(
-    console.log
-  )
-).subscribe();
+ this.endTask= this.tasklist.taskList; 
   }
-boutonEnvoi():void{
- console.log(this.nomtache);
-
-}
   
 }
