@@ -5,10 +5,15 @@ import {AddFormComponent} from "./add-form/add-form.component";
 import { EndTaskComponent } from "./end-task/end-task.component";
 import { LoadingTaskComponent } from "./loading-task/loading-task.component";
 import { AppComponent } from "./app.component";
+import { TitleAndTaskContainerComponent } from "./title-and-task-container/title-and-task-container.component";
 const route:Routes=[
   {
     path:'add',
     component:AddFormComponent
+  },
+  {
+    path:'',
+    component:TitleAndTaskContainerComponent
   },
   {
     path:'endtask',

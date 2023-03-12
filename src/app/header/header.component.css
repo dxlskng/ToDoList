@@ -13,4 +13,6 @@ li{
   padding-left: 12px;
   cursor: pointer;
 }
-  
+ h2{
+  cursor: pointer;
+ } 
