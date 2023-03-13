@@ -1,4 +1,4 @@
 <div class="end-task-form-container" *ngFor="let item of endTask">
-    <h1 *ngIf="item.finis===true; encours">Nom Tache: {{item.tasktitle}}</h1>
-<h1 #encours > Aucune tache terminée</h1>
+    <p *ngIf="item.finis===true; encours">Nom Tache: {{item.tasktitle}}</p>
+    <p #encours > Aucune tache terminée</p>
 </div>

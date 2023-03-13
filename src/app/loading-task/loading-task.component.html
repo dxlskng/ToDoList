@@ -1,3 +1,6 @@
-<div class="end-task-form-container" *ngFor="let item of loadingTask ">
-    <h1 *ngIf="item.finis===false">Nom Tache: {{item.tasktitle}}</h1>
+<div class="principal-container">
+    <h2>Taches En cours:</h2>
+    <div class="loading-task-form-container" *ngFor="let item of loadingTask ">
+        <p *ngIf="item.finis===false">Nom Tache: {{item.tasktitle}}</p>
+    </div>
 </div>

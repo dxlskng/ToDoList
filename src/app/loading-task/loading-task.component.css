@@ -1,0 +1,10 @@
+.principal-container{
+    position: absolute;
+    left: 25%;
+    margin-top: 75px;
+}
+.loading-task-form-container{
+    position: relative;
+    padding-top: 15px;
+    font-size: 20px;
+}

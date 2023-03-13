@@ -20,6 +20,7 @@ taskList :taskcomposition[]=[
 
 };
 finirTache(id:number):void{
+  alert("Tache Terminée: Félicitation");
 for (let i = 0; i < this.taskList.length; i++) {
   if(this.taskList[i].id===id) {
     this.taskList[i].finis=true;
