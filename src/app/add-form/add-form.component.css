@@ -4,17 +4,11 @@ form{
   left:250px;
 }
 input{
-margin-bottom: 15px;
-margin-left: auto;
-width: 500px;
-height: 30px;
-}
-#description{
-  height: 100px;
-}
-.sendB{
-  position: relative;
-}
+  margin-bottom: 14px;
+  margin-left: auto;
+  width: 499px;
+  height: 29px;
+  }
 button{
   position:relative ;
   background-color: peachpuff;
@@ -23,3 +17,10 @@ button{
   border: none;
   left: 50px;
 }
+#description{
+  height: 100px;
+}
+.sendB{
+  position: relative;
+}
+
