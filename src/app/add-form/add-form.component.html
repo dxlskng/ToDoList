@@ -1,13 +1,13 @@
-<form #addTaskForm="ngForm"> 
+<form [formGroup]="formulaire">
   <div class="group">
-       <input type="text"  name="titre" id="titre" placeholder="Titre Tache" [(ngModel)]="titre" autocomplete="off">
+       <input type="text"  id="titre" placeholder="Titre Tache" formControlName="Titre" autocomplete="off">
     <br>
     <br>
-       <input type="text" name="description" id="description" placeholder="description" [(ngModel)]="descrit" autocomplete="off">
+       <input type="text"  id="description" placeholder="description" formControlName="Description" autocomplete="off">
     <br>
   </div>
   <div class="sendB">
     <br>
-    <button  type="submit" (click)="addTask.addlist(addTaskForm)" routerLink="">Ajouter</button>
+    <button  type="submit" (click)="addTask.addlist(formulaire)" routerLink="">Ajouter</button>
   </div>
 </form>

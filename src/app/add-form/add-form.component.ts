@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 import {taskService} from "../services/task.service";
 
 @Component({
@@ -8,15 +8,14 @@ import {taskService} from "../services/task.service";
   styleUrls: ['./add-form.component.css']
 })
 export class AddFormComponent implements OnInit{
-  constructor(public addTask:taskService) {
-  }
-  titre!:string;
-  descrit!:string;
+constructor(private formbuilder: FormBuilder,public addTask:taskService){}
+formulaire!:FormGroup;
   ngOnInit() {
-
-  }
-  onSubmitForm(form:NgForm)
+this.formulaire= this.formbuilder.group(
   {
-    console.log(form.value);
+    Titre:[null],
+    Description:[null]
+  }
+);
   }
 }

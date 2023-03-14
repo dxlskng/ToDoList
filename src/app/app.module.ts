@@ -7,7 +7,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import {AppRoutingModule} from "./appRouting.module";
 import { AddFormComponent } from './add-form/add-form.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EndTaskComponent } from './end-task/end-task.component';
 import { LoadingTaskComponent } from './loading-task/loading-task.component';
 
@@ -25,7 +25,8 @@ import { LoadingTaskComponent } from './loading-task/loading-task.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
