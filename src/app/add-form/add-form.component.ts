@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { NgForm } from '@angular/forms';
 import {taskService} from "../services/task.service";
 
 @Component({
@@ -13,5 +14,9 @@ export class AddFormComponent implements OnInit{
   descrit!:string;
   ngOnInit() {
 
+  }
+  onSubmitForm(form:NgForm)
+  {
+    console.log(form.value);
   }
 }

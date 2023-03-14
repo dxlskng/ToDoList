@@ -1,4 +1,4 @@
-<form>
+<form #addTaskForm="ngForm"> 
   <div class="group">
        <input type="text"  name="titre" id="titre" placeholder="Titre Tache" [(ngModel)]="titre" autocomplete="off">
     <br>
@@ -8,6 +8,6 @@
   </div>
   <div class="sendB">
     <br>
-    <button (click)="addTask.addlist(titre,descrit)" type="submit" routerLink="">Ajouter</button>
+    <button  type="submit" (click)="addTask.addlist(addTaskForm)" routerLink="">Ajouter</button>
   </div>
 </form>

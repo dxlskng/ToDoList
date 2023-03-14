@@ -1,4 +1,5 @@
 import {Injectable} from "@angular/core";
+import { NgForm } from "@angular/forms";
 import {taskcomposition} from "../models/taskcomposition.model";
 
 @Injectable({
@@ -7,12 +8,12 @@ import {taskcomposition} from "../models/taskcomposition.model";
 export class taskService{
 taskList :taskcomposition[]=[
 ];
-  addlist(title:string ,escription:string)
+  addlist(form:NgForm)
 {
   let titl!:string;
   this.taskList.push({
-    tasktitle:title,
-    description:escription,
+    tasktitle:form.value.titre,
+    description:form.value.description,
     startDate:new Date(),
     finis:false,
     id:Math.random()*100
