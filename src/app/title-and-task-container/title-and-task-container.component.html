@@ -1,4 +1,4 @@
-<div class="titleAndTaskContainer" *ngFor="let c of mytask" >
+<div class="titleAndTaskContainer" *ngFor="let c of mytask$ | async" >
   <div class="taskContainer">
       <div class="taskTitle-and-finish-action-container">
       <p id="tasktitle">Task:{{c.tasktitle}}</p>
