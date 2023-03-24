@@ -10,6 +10,7 @@ import { AddFormComponent } from './add-form/add-form.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EndTaskComponent } from './end-task/end-task.component';
 import { LoadingTaskComponent } from './loading-task/loading-task.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,13 +21,14 @@ import { LoadingTaskComponent } from './loading-task/loading-task.component';
     TaskListComponent,
     AddFormComponent,
     EndTaskComponent,
-    LoadingTaskComponent
+    LoadingTaskComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
