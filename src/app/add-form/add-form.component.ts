@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {taskService} from "../services/task.service";
 
 @Component({
@@ -15,8 +14,8 @@ formulaire!:FormGroup;
   ngOnInit() {
 this.formulaire= this.formbuilder.group(
   {
-    Titre:[null],
-    Description:[null]
+    Titre:[null, Validators.required],
+    Description:[null, Validators.required]
   }
 );
   }

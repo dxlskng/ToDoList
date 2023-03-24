@@ -8,6 +8,6 @@
   </div>
   <div class="sendB">
     <br>
-    <button  type="submit" (click)="addTask.addlist(formulaire)" routerLink="">Ajouter</button>
+    <button  type="submit" (click)="addTask.addlist(formulaire)" [disabled]="formulaire.invalid" routerLink="">Ajouter</button>
   </div>
 </form>
